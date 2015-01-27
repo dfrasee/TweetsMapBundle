@@ -1,7 +1,16 @@
 <?php
 
 namespace TweetsMapBundle\Controller;
-
+/**
+ * An action control event for search city.
+ *
+ * @package   Tweets
+ * @version   1.0.0-dev
+ * @author    Dangphan Rasee <rasee59@gmail.com>
+ * @copyright 2014 Dangphan Rasee <rasee59@gmail.com>
+ * @license   http://opensource.org/licenses/GPL-3.0 GNU General Public License 3.0
+ * @link      https://github.com/dfrasee/TweetsMapBundle
+ */
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
