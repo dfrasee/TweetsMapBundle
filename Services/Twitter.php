@@ -1,6 +1,6 @@
 <?php
 
-namespace TweetsBundle\Services;
+namespace TweetsMapBundle\Services;
 
 /**
  * A Twitter library in PHP.
