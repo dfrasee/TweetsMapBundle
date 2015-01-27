@@ -1,0 +1,52 @@
+{% extends 'TweetsMapBundle::layout.html.twig' %}
+{% block title %}{{title}}{% endblock %}   
+{% block content %}
+{% if  data.status ==1  %}
+    {% set key_val = data.city %}
+    {% set key_hold = data.city %}
+{% else %}
+    {% set key_val = '' %}
+    {% set key_hold = 'City name' %}
+{% endif %}
+<div id="map-canvas"></div>
+<div id="map_bar">
+    <div></div>
+    <div><input type="text" id="search_key" name="search_key" value="{{key_val}}" placeholder="{{key_hold}}"></div>
+    <div class="btn"><a id="search" href="{{ path('ajax_search') }}"><i class="icon-search"></i> <span>Search</span></a></div>
+    <div class="btn"><a href="{{ path('search_history') }}"><i class="icon-archive"></i> <span>History</span></a></div>
+</div>
+{% endblock %}
+{% block javascripts %}
+    
+    <script type="text/javascript"
+      src="{{ asset('js/jquery.blockUI.js') }}">
+    </script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwXB4MtDWDj-uKl37Zef2o___GvN5424I">
+    </script>
+    <script type="text/javascript"
+      src="{{ asset('js/maplabel.js') }}">
+    </script>
+    <script type="text/javascript">
+        {% if data.status ==1 %}
+            var data = {city:'', lat: 0, lng: 0, tweets:[]};
+            {% if data.tweets | length %}
+            data.city = '{{data.city}}';
+            data.lat = {{data.lat}};
+            data.lng = {{data.lng}};
+                data.tweets = []; 
+                {% for tweet in data.tweets %}
+                     data.tweets.push({avatar: '{{tweet.avatar}}' , title: '{{tweet.title | replace({"\n":" "})}}', lat: '{{tweet.lat}}', lng: '{{tweet.lng}}' });
+                {% endfor %}    
+            {% endif %}
+            map.initialize({{data.lat}}, {{data.lng}}, 12);
+            if(data.tweets.length){
+                map.show_tweets(data);
+            }
+        {% else %}    
+        
+               map.initialize(44.5403, -78.5463, 8);
+        
+        {% endif %}
+        
+{% endblock %} 
