@@ -1,0 +1,14 @@
+{% extends 'TweetsMapBundle::layout.html.twig' %}
+{% block title %}{{title}}{% endblock %}   
+{% block content %}
+{% if list | length %}
+<div><a class="link_back" href="{{ path('landingpage')}}"><i class="icon-angle-double-left"></i> BACK TO THE TWEETS</a></div>
+<ul id="search_history">
+    {% for search in list %}
+        <li><a href="{{ path('search',{city: search.city,lat: search.lat,lng: search.lng}) }}"><i class="icon-search"></i> {{search.city}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<div class="text-center"><h3>No search histories found</h3></div>
+{% endif %}
+{% endblock %}
