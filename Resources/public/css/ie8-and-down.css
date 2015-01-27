@@ -1,0 +1,198 @@
+form fieldset .weight input, form fieldset .insure input {
+    *padding: 2px 3px;
+} 
+
+.label_text_center {
+    *padding-top: 15px;
+}
+
+form fieldset .input-append .add-on, form fieldset .input-prepend .add-on {
+    *padding: 1px 5px 1px;
+    *font-size: 11px;
+    *height: 17px;
+    *margin-top: 1px;
+}
+
+form fieldset .input-append, form fieldset .input-prepend {
+    *margin-top: 3px;
+}    
+
+
+
+fieldset#shifment_form .weight input {
+    
+    *padding: 0 3px 4px; 
+    *margin-top: -4px;
+    
+}
+
+#shifment_form input#shipment_value { width: 63px; *width: 66px; }
+
+#shifment_form #risk { width: 130px;}
+
+/********* TAB ********/
+#container .nav-tabs > li a  {
+    border: none;
+    background: url(../images/tab_grey.png) no-repeat right center;
+}
+
+#container .nav-tabs > li.active a {
+    background: url(../images/tab_red.png) no-repeat right center;
+    
+}
+
+#container .nav-tabs > li a span  {
+    border: none;
+    width: 165px;
+    background: url(../images/tab_grey.png) no-repeat left center;
+}
+
+#container .nav-tabs > li.active a span {
+    background: url(../images/tab_red.png) no-repeat left center;
+    
+}
+
+.fc {
+    margin-left: 40%; 
+     
+}
+
+
+
+/****** BUTTON *********/
+
+.ie_btn.ie_btn_red:hover, 
+.ie_btn {
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    margin: 3px 4px;
+    width: auto;
+    height: 30px;
+    background: url(../images/btn_grey.png) no-repeat left center;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red:hover,
+.ie_btn.ie_btn_mini {
+    background: url(../images/btn_grey_mini.png) no-repeat left center;
+    height: 22px;
+    padding: 0 0 0 7px;
+}
+
+.ie_btn.ie_btn_red:hover>span,
+.ie_btn>span {
+    background: url(../images/btn_grey.png) no-repeat right center;
+    padding: 0 10px 0 0;
+    height: 30px;
+    display: inline-block;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red:hover>span,
+.ie_btn.ie_btn_mini>span {
+   background: url(../images/btn_grey_mini.png) no-repeat right center; 
+   height: 22px;
+   padding: 0 7px 0 0;
+}
+
+.ie_btn.ie_btn_red:hover .btn,
+.ie_btn .btn {
+    margin: 0;
+    background: url(../images/btn_grey_bg.png) repeat-x;  
+    height: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red:hover .btn.btn-mini.bg_red,
+.ie_btn.ie_btn_mini .btn.btn-mini {
+    background: url(../images/btn_grey_mini_bg.png) repeat-x center;  
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    border: none; 
+}
+
+/* primary button */
+.ie_btn.ie_btn_primary.ie_btn_red:hover,
+.ie_btn.ie_btn_primary {
+    background: url(../images/btn_blue.png) no-repeat left center;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_primary.ie_btn_red:hover,
+.ie_btn.ie_btn_mini.ie_btn_primary {
+    background: url(../images/btn_blue_mini.png) no-repeat left center;
+}
+
+.ie_btn.ie_btn_primary.ie_btn_red:hover>span,
+.ie_btn.ie_btn_primary>span {
+    background: url(../images/btn_blue.png) no-repeat right center;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_primary.ie_btn_red:hover>span,
+.ie_btn.ie_btn_mini.ie_btn_primary>span {
+   background: url(../images/btn_blue_mini.png) no-repeat right center; 
+}
+
+.ie_btn.ie_btn_primary.ie_btn_red:hover .btn,
+.ie_btn.ie_btn_primary.ie_btn_red:hover .btn:hover,
+.ie_btn.ie_btn_primary .btn.btn-primary {
+    background: url(../images/btn_blue_bg.png) repeat-x;  
+}
+
+.ie_btn.ie_btn_mini.ie_btn_primary.ie_btn_red:hover .btn.btn-mini
+.ie_btn.ie_btn_mini.ie_btn_primary.ie_btn_red:hover .btn.btn-mini:hover,
+.ie_btn.ie_btn_mini.ie_btn_primary .btn.btn-primary.btn-mini {
+    background: url(../images/btn_blue_mini_bg.png) repeat-x center;  
+} 
+
+/* red button */
+.ie_btn.ie_btn_red {
+    background: url(../images/btn_red.png) no-repeat left center;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red {
+    background: url(../images/btn_red_mini.png) no-repeat left center;
+}
+
+.ie_btn.ie_btn_red>span {
+    background: url(../images/btn_red.png) no-repeat right center;
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red>span {
+   background: url(../images/btn_red_mini.png) no-repeat right center; 
+}
+
+.ie_btn.ie_btn_red .btn.bg_red {
+    background: url(../images/btn_red_bg.png) repeat-x;  
+}
+
+.ie_btn.ie_btn_mini.ie_btn_red .btn.btn-mini.bg_red {
+    background: url(../images/btn_red_mini_bg.png) repeat-x center;  
+} 
+
+.modal input {
+    padding: 0 4px 7px;
+    margin-bottom: 6px;
+    height: 13px;
+}
+
+.modal select {
+    margin-bottom: 6px;
+}
+
+.modal form#CalcCBM label {
+    padding: 0 0 5px 0;
+}
+
+i {
+    font-size: 10px;
+    line-height: 10px;
+}
+i.icon img { display: block;}
+
+a .icon_excel {
+    display: inline-block;
+    z-index: 999;
+    padding: 0 8px 2px;
+}    

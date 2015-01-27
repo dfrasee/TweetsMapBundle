@@ -1,0 +1,28 @@
+html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+
+#map_bar {width: 100%;display: table; position: fixed; bottom:0;
+    -moz-box-shadow: 0 6px 6px 6px rgba(68,68,68,0.6);
+    -webkit-box-shadow: 0 6px 6px 6px rgba(68,68,68,0.6);
+    box-shadow: 0 6px 6px 6px rgba(68,68,68,0.6);
+}
+#map_bar>div { display: table-cell; vertical-align: middle;}
+#map_bar>div:first-child { width: 20px; background-color: #fff;}
+#map_bar .btn { width: 150px; border-left: 1px solid #fff;}
+#map_bar input {width: 100%; border: none;padding: 8px 0;font-size: 12px; font-family: arial;}
+#map_bar a { display:block; padding: 8px 0; text-decoration: none;text-align: center;text-transform: uppercase;color: #fff; background-color: #066896; font-weight: bold;font-size: 12px; font-family: arial;}
+#map_bar a:hover { background-color: #028ccc; cursor: default;}
+
+#search_history { margin: 0; padding: 0;}
+#search_history li { border-bottom: 1px solid #066896; list-style: none;}
+#search_history li a, .link_back { text-decoration: none; color: #666; font-size: 12px; display: block; padding: 8px 10px 8px 30px; text-transform: uppercase;}
+#search_history li a:hover, .link_back:hover { background: #eee; color: #000;}
+.link_back { 
+    border-bottom: 1px solid #bbb;
+}
+
+@media (max-width: 450px) {
+  #map_bar .btn { width: 50px;}  
+  #map_bar .btn a span {
+    display: none;
+  }
+}
