@@ -4,9 +4,9 @@ Tweets Map Bundle
 
 This is a test-bundle represent for searching city tweets on google map.
 
-Here is the [demo example](http://tweetsmap.punkun-arn.com/web).
+Here is the <a target="_blank" href="http://tweetsmap.punkun-arn.com/web">demo example</a>.
 
-Distribution: Best used with [Symfony Standard Edition](https://github.com/symfony/symfony-standard)
+Distribution: Best used with <a target="_blank" href="https://github.com/symfony/symfony-standard">Symfony Standard Edition</a>
 
 Requirements
 ------------
