@@ -21,7 +21,9 @@ use Doctrine\Common\Cache\FilesystemCache;
 use TweetsMapBundle\Entity\History;
 use TweetsMapBundle\Services\Twitter;
 
-
+/**
+ * @Route("/tweets")
+ */
 class TweetsMapController extends Controller
 {
     /**
@@ -36,7 +38,7 @@ class TweetsMapController extends Controller
      /**
      * Retrives histories data of current user sort by recent search
      * 
-     * @Route("/tweets/history", name="search_history")
+     * @Route("/history", name="search_history")
      * @Template("TweetsMapBundle:Tweets:histories.html.twig")
      */
     public function historyAction()
@@ -70,7 +72,7 @@ class TweetsMapController extends Controller
     /**
      * Do seach tweets from specify key (city)
      * 
-     * @Route("/tweets/search/{city}/{lat}/{lng}", name="search")
+     * @Route("/search/{city}/{lat}/{lng}", name="search")
      * @Template("TweetsMapBundle:Tweets:landingpage.html.twig")
      */
     public function searchAction($city='',$lat=0,$lng=0)
@@ -85,7 +87,7 @@ class TweetsMapController extends Controller
     /**
      * Do seach tweets from specify key (city) by ajax request
      *  
-     * @Route("/tweets/ajax_search", name="ajax_search")
+     * @Route("/ajax_search", name="ajax_search")
      * @param Request $request the request object
      */
     public function ajaxSearchAction(Request $r)
