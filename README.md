@@ -66,6 +66,21 @@ TweetsMapBundle:
     resource: "@TweetsMapBundle/Controller/"
     type:     annotation
     prefix:   /tweets-map
+    
+# app/config/parameters.yml
+    # database config values go here
+    #. 
+    #.
+    #.
+    
+    #twiter key you can change to be your key
+    twitter_oauth_access_token: xxx
+    twitter_oauth_access_token_secret: yyy
+    twitter_consumer_key: zzz
+    twitter_consumer_secret: zxc
+    
+    #google map key
+    google_api_key: xyz
 ```
 
 ### Refresh asset folder
