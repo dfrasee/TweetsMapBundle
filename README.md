@@ -11,7 +11,7 @@ Distribution: Best used with <a target="_blank" href="https://github.com/symfony
 Requirements
 ------------
 
-Symfony(https://github.com/symfony/symfony) obviously.
+Symfony <a target="_blank" href="https://github.com/symfony/symfony">(https://github.com/symfony/symfony)</a> obviously.
 
 Installation
 ------------
