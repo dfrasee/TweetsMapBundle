@@ -19,7 +19,7 @@ Installation
 ### Add the deps for the needed bundles
 
 ``` php
-[AcmePizzaBundle]
+[TweetsMapBundle]
     git=https://github.com/dfrasee/TweetsMapBundle.git
     target=/bundles/Tweets/MapBundle
 ```
